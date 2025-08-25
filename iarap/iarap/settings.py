@@ -146,5 +146,39 @@ REST_FRAMEWORK = {
     ],
 }
 
+# Allow all origins (for development)
 CORS_ALLOW_ALL_ORIGINS = True
+
+# OR for production, specify allowed origins:
+CORS_ALLOWED_ORIGINS = [
+    "https://your-frontend-domain.com",
+    "http://localhost:3000",  # For local development
+    "http://127.0.0.1:8000",
+    "http://127.0.0.1:5500",
+]
+
+# Allow credentials if needed
 CORS_ALLOW_CREDENTIALS = True
+
+# Allowed methods
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
+# Allowed headers
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
