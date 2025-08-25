@@ -19,7 +19,7 @@
     "env": {
         "DEBUG": "False",
         "ENVIRONMENT": "production"
-    }
+    },
     "headers": [
     {
       "source": "/api/(.*)",
@@ -32,3 +32,4 @@
   ]
 
 }
+
