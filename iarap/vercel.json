@@ -12,7 +12,7 @@
     ],
     "routes": [
     {
-      "source": "/(.*)",
+      "src": "/(.*)",
       "dest": "iarap/wsgi.py",
       "headers": [
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
@@ -28,5 +28,6 @@
     }
 
 }
+
 
 
